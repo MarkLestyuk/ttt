@@ -29,4 +29,21 @@ class HomeController extends Controller
     {
         return view('show');
     }
+    public function catalog()
+    {
+        return view('page');
+    }
+    public function single_comics()
+    {
+        return view('page_1');
+    }
+    public function mape()
+    {
+        return view('map');
+    }
+    public function abo()
+    {
+        return view('about');
+    }
 }
+
