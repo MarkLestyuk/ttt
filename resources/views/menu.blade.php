@@ -24,6 +24,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/public/map">Где нас найти?</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/public/login">ВЫЙТИ</a>
+        </li>
       </ul>
     </div>
   </div>

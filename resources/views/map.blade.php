@@ -34,7 +34,7 @@
             <div class="clear"></div>
         </div><!-- /contacts-row -->
           <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A66c1c0b6271104a6ecf47af28c6f5ee02ecb2c998f0e7e4593fc3fe0bbe53521&amp;width=auto&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+           
           </div>
 
       </div>

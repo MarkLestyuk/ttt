@@ -13,18 +13,18 @@
         <h1>Новости</h1>
 
         <div class="row-news">
-        @foreach($comic as $com)
+        @foreach($comics as $com)
           <!-- Новость -->
          
           <div class="news-wrap col">
             <div class="news-item">
               <div class="news-img-item">
-            <img src="img/news.jpg" />
+            <img src="/public{{$com->image}}" />
           </div>
               <div class="news-item-text">
-                <p>{{$com["release_date"]}}</p>
-                <h2 class="news-item-title">Что такое Lorem Ipsum?</h2>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p> 
+                {{$com->release_date}}
+                <h2 class="news-item-title"> {{$com->name}}</h2>
+                <p>{{$com->short_description}}</p> 
                 
                 <p><a href="page_1">Подробнее...</a></p>
               </div>

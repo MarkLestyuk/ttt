@@ -196,7 +196,7 @@ a:active {color: #125f8b;}
   background: #fff;
 }
 .news-wrap {
-  width: 33.33%;
+  width: 10%;
   float: left;
   display: inline-block;
 }
@@ -237,23 +237,10 @@ a:active {color: #125f8b;}
  transform:scale(1.1);
 }
 
-
 /*SINGLE-NEWS*/
 .single-news-date
 {
   font-size: 16px;
   line-height: 19px;
   color: #939393
-}
-.single-news-title
-{
-
-}
-.single-news-pic
-{
-
-}
-.single-news-text
-{
- 
 }
