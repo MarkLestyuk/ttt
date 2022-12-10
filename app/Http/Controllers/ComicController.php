@@ -49,6 +49,11 @@ class ComicController extends Controller
         $comic = \DB::table('comics')->get();
         return view('page', ['comics' => $comic]);
     }
+    public function single_comics(comic $comic)
+    {
+        $comic = \DB::table('comics')->get();
+        return view('page_1', ['comics' => $comic]);
+    }
 
     /**
      * Show the form for editing the specified resource.

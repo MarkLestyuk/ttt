@@ -25,7 +25,6 @@
                 {{$com->release_date}}
                 <h2 class="news-item-title"> {{$com->name}}</h2>
                 <p>{{$com->short_description}}</p> 
-                
                 <p><a href="page_1">Подробнее...</a></p>
               </div>
             </div>
@@ -36,10 +35,7 @@
         </div>
       </div>
     </div>
-    <div class="footer col">
-        <p></p>
-        <p>ИСП 9-7</p>
-    </div>
+
   </div>
 </body>
 </html>
