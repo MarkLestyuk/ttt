@@ -24,13 +24,17 @@
               <div class="news-item-text">
                 {{$com->release_date}}
                 <h2 class="news-item-title"> {{$com->name}}</h2>
-                <p>{{$com->short_description}}</p> 
-                <p><a href="page_1">Подробнее...</a></p>
+                <h2 class="news-item-title"> {{$com->price}}</h2>
+
+          <p><a href="page/{{$com->id}}">Подробнее...</a></p>
+
+                
               </div>
             </div>
           </div>
           <!-- /Новость -->
           @endforeach
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="clear"></div>
         </div>
       </div>

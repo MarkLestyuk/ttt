@@ -49,10 +49,10 @@ class ComicController extends Controller
         $comic = \DB::table('comics')->get();
         return view('page', ['comics' => $comic]);
     }
-    public function single_comics(comic $comic)
+    public function single_comics($id)
     {
-        $comic = \DB::table('comics')->get();
-        return view('page_1', ['comics' => $comic]);
+        $comic = \DB::table('comics')->find($id);
+        return view('page_1', ['com' => $comic]);
     }
 
     /**
