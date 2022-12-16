@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Новость в развёрнутом виде - project4</title>
+    <title>Комикс в развёрнутом виде - project4</title>
     <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
@@ -16,13 +16,13 @@
                     <h2 class="single-news-title">{{$com->name}}</h2>
                     <div class="single-news-row">
                         <div class="single-news-pic col">
-                            <img src="/public{{$com->image}}" />
+                            <img src="/public/{{$com->image}}" />
                         </div>
                         <div class="single-news-text col"> 
                            <p></p>
                            <p>Категория: {{$com->categories}}</p>
                            <p>Антоганист: {{$com->antagonist}}</p>
-                           <p>Издатель: {{$com->author}}</p>
+                           <p>Издатель: {{$com->author->author}}</p>
                            <p>Цена: {{$com->price}}</p>
                         </div>
                         <div class="clear"></div>

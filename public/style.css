@@ -1,4 +1,4 @@
-* {box-sizing:border-box;}
+
 
 /* connon style */
 body {
@@ -229,7 +229,6 @@ a:active {color: #125f8b;}
 
 .news-img-item{
   overflow: hidden;
-  height: 220px;
 }
 
 .news-img-item img:hover
@@ -243,4 +242,8 @@ a:active {color: #125f8b;}
   font-size: 16px;
   line-height: 19px;
   color: #939393
+}
+.comicss
+{
+  
 }

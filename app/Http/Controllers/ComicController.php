@@ -47,12 +47,30 @@ class ComicController extends Controller
     public function show(comic $comic)
     {
         $comic = \DB::table('comics')->get();
-        return view('page', ['comics' => $comic]);
+        return view('page', ['comics' => $comic, "n"=>"name", "nap"=>"desc"]);
     }
     public function single_comics($id)
     {
-        $comic = \DB::table('comics')->find($id);
+        $comic =\App\Models\comic::find($id);
         return view('page_1', ['com' => $comic]);
+    }
+    public function showSort($name, $nap)
+    {
+        $comic = \App\Models\comic::orderBy($name, $nap)->get();
+        return view('page', ['comics' => $comic, "n"=>$name, "nap"=>$nap]);
+    }
+    public function showFilter($name)
+    {
+        $comic = \App\Models\comic::where("author_id", $name)->get();
+        return view('page', ['comics' => $comic, "n"=>"name", "nap"=>"desc"]);
+    }
+    public function comicsi()
+    {
+        $date = \DB::table('comics')
+            ->orderBy('release_date', 'desc')
+            ->limit(5)
+            ->get();
+        return view('show', ['aee' => $date]);
     }
 
     /**

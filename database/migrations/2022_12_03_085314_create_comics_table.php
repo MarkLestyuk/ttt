@@ -18,7 +18,7 @@ class CreateComicsTable extends Migration
             $table->string('name');
             $table->integer('price');
             $table->date('release_date');
-            $table->string('author');
+            $table->integer('author_id');
             $table->string('antagonist');
             $table->string('image');
             $table->string('short_description');
